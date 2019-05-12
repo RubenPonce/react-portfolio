@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Introduction() {
   return (
-    <div>
+    <div className="introduction">
       <h1>
         I'm Ruben Ponce, a full stack{" "}
         <a href="https://github.com/RubenPonce" target="_blank" rel="noopener noreferrer" >
@@ -10,8 +10,7 @@ export default function Introduction() {
         </a>.
       </h1>
       <div>
-        <h2>Projects: </h2>
-        <p>Click for more info</p>
+        
       </div>
     </div>
   );

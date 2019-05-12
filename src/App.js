@@ -25,6 +25,7 @@ export class App extends Component {
         <Route exact path="/" render={(props)=>{
          return ( 
          <div>
+         
              <Introduction />
             <Projects {...props} projects={this.state.projects} />  
           </div>)
