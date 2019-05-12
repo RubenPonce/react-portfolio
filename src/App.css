@@ -7,8 +7,9 @@ body{
  
   background: url(./components/images/trianglify.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
-  max-width: 1500px;
+  max-width: 1920px;
 }
 
 
@@ -21,8 +22,32 @@ body{
   z-index: 2;
   top: 0;
   padding: 3em 2em;
-
+  
 }
+.scroll-effect{
+  animation-name: ScrollEffect;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}@keyframes ScrollEffect{
+  0%{
+    background: transparent;
+  }
+  100%{
+    background: black;
+  }
+}
+.remove-scroll{
+  animation: RemoveScroll .5s forwards;
+}
+@keyframes RemoveScroll{
+  0%{
+    background: black;
+  } 
+  100%{
+    background: transparent;
+  }
+}
+
 .header .social-links {
   display: flex;
   justify-content: space-evenly;
@@ -54,8 +79,8 @@ body{
 }
 .introduction a{
   color: white;
-  font-weight: 600;
-  text-decoration: none;
+  
+  text-decoration: underline;
 }
 
 
@@ -66,7 +91,7 @@ flex-wrap: wrap;
 justify-content: center;
 flex-direction: row-reverse;
 align-items: flex-end;
-background: linear-gradient(168deg, rgba(255, 255, 255, 0) 30%, white 30%);
+background: linear-gradient(173deg, rgba(255, 255, 255, 0) 30%, #F0F0F0 30%);
 width: 100%;
 left: -5%;
 
