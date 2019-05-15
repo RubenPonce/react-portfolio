@@ -5,7 +5,7 @@ const data =  [
         "technologies":["js","css3-alt","html5","less"],
         "demo":"https://pintereachui.netlify.com/",
         "sourceCode":"https://github.com/pintreach/buildweek-pintreach-UI",
-        "landingImage": "/static/media/pine.fa617ba5.png"
+        landingImage: './images/pine.png'
      }, 
      {  "id": "4",
         "project_name":"Technical Word Salad",
@@ -13,7 +13,7 @@ const data =  [
         "technologies":["js","css3","html5"],
         "demo":"https://rubenponce.github.io/gameShowApp/",
         "sourceCode":"https://github.com/RubenPonce/gameShowApp/",
-        "landingImage": "/static/media/wordsalad.png"
+        landingImage: './images/wordsalad.png'
      },
      
     ]
