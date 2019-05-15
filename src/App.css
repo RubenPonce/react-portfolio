@@ -86,7 +86,8 @@ body{
   text-decoration: underline;
 }
 .project-intro h2, .project-intro p{ 
-  font-family: 'Averia Serif Libre', cursive;
+  font-family: 'Raleway', cursive;
+  font-weight: 600;
   margin-right: 65%;
   color: #efefef
 
@@ -94,7 +95,6 @@ body{
 
 .project-header{
   margin: 1em 0;
-  align-self: baseline;
   font-family: Raleway, Arial, sans-serif;
   width: 35%;
   align-self: center;
@@ -107,6 +107,7 @@ body{
 .project-header p{
   font-size: 1.2rem;
   font-weight: 400;
+  line-height: 2;
 }
 .projects-container{
 display: flex;
@@ -121,6 +122,8 @@ width: 100%;
 }
 .landing-image-container{
   width: 55%;
+  align-self: flex-end;
+  margin-bottom: 3em;
 }
 .project-card .landing-image{
   width: 85%;
@@ -145,6 +148,7 @@ width: 100%;
 display: flex;
 min-height: 500px;
 align-items: center;
+border-radius: 5px;
 width: 75%;
 box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.7);
 background: #efefef;
