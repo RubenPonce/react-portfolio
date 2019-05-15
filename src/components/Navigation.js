@@ -3,16 +3,13 @@ import {Link} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 export default class Navigation extends React.Component {
     
-    handleScroll = (event) =>{
-        if(window.scrollY > 10){
-            if(document.querySelector('.header').classList.contains('remove-scroll')){
-                document.querySelector('.header').classList.remove('remove-scroll')
-            }
-            
-            document.querySelector('.header').classList.add('scroll-effect');
+    handleScroll = () =>{
+       const header =  document.querySelector('.header');
+        if(window.scrollY > 15){  
+            header.classList.add('scroll-effect');
+            if( header.classList.contains('remove-scroll')){header.classList.remove('remove-scroll')}
         } else{
-            document.querySelector('.header').classList.remove('scroll-effect');
-            document.querySelector('.header').classList.add('remove-scroll')
+            header.classList.replace('scroll-effect','remove-scroll')
         }
     }
     componentDidMount() {
@@ -24,7 +21,7 @@ export default class Navigation extends React.Component {
       }
 
   render(){return (
-    <div className="header " onScroll={this.handleScroll}>
+    <div className="header">
     <div  className="nav">
           <Route path="/project/:id" render={()=><Link to="/"  >Projects </Link>} />
           <a href="https://sourcerer.io/rubenponce" target="_blank" rel="noopener noreferrer">Technologies Used</a>

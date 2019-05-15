@@ -19,6 +19,8 @@ body{
   background: none;
   width: 100%;
   position: fixed;
+  height: 76px;
+  align-items: center;
   z-index: 2;
   top: 0;
   padding: 3em 2em;
@@ -28,6 +30,7 @@ body{
   animation-name: ScrollEffect;
   animation-duration: .5s;
   animation-fill-mode: forwards;
+  background: transparent;
 }@keyframes ScrollEffect{
   0%{
     background: transparent;
@@ -82,25 +85,68 @@ body{
   
   text-decoration: underline;
 }
+.project-intro h2, .project-intro p{ 
+  font-family: 'Averia Serif Libre', cursive;
+  margin-right: 65%;
+  color: #efefef
 
+}
 
-
+.project-header{
+  margin: 1em 0;
+  align-self: baseline;
+  font-family: Raleway, Arial, sans-serif;
+  width: 35%;
+  align-self: center;
+}
+.project-header h3{
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+.project-header p{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 .projects-container{
 display: flex;
+flex-direction: column;
 flex-wrap: wrap;
 justify-content: center;
 flex-direction: row-reverse;
 align-items: flex-end;
 background: linear-gradient(173deg, rgba(255, 255, 255, 0) 30%, #F0F0F0 30%);
 width: 100%;
-left: -5%;
 
+}
+.landing-image-container{
+  width: 55%;
+}
+.project-card .landing-image{
+  width: 85%;
+  margin: 0 auto;
+  box-shadow: 6px 8px 42px 1px rgba(0,0,0,0.15)
+}
+.project-tech{
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  margin: 1em auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.project-tech i{
+  margin: 1.5em 1em 0 1em;
+  color: #3AA7FF
 }
 
 .project-card{
-
-width: 500px;
-height: 300px;
-background: beige;
+display: flex;
+min-height: 500px;
+align-items: center;
+width: 75%;
+box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.7);
+background: #efefef;
 margin: 1em;
 }

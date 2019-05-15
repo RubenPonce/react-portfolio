@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ProjectCard from "./ProjectCard"
-import { Link } from 'react-router-dom';
+
 
 export class Projects extends Component {
 
@@ -11,16 +11,16 @@ export class Projects extends Component {
 
     return (
       <div>
+      <div className="project-intro">
 
         <h2>Projects: </h2>
         <p>Click for more info</p>
+        </div>
         <div className="projects-container">
           {projects.map(projectCard => {
             return (
-
-              <Link to={`/project/${projectCard.id}`}>
-                <ProjectCard {...this.props} project={projectCard} key={projectCard.id} />
-              </Link>)
+                <ProjectCard {...this.props} project={projectCard} key={projectCard.id} projectRoute={`/project/${projectCard.id}`}/>
+              )
           })}
         </div>
       </div>
