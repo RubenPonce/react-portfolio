@@ -1,16 +1,13 @@
 .App {
   text-align: center;
-  margin-top: 10em;
-
-}
-body{
- 
+  padding-top: 10em;
   background: url(./components/images/trianglify.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   max-width: 1920px;
 }
+
 
 
 .header{
@@ -153,4 +150,39 @@ width: 75%;
 box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.7);
 background: #efefef;
 margin: 1em;
+}
+.project-card:nth-child(odd){
+  flex-direction: row-reverse;
+}
+.contact-form{
+  width: 100%;
+  padding: 4em 0 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(50deg, #3AA7FF 20%,rgb(59, 127, 182) 60%, rgb(108, 179, 237) 100%)
+  /* background: linear-gradient(135deg, white 20%,black 60%, purple 100%) */
+  
+}
+.contact-form input, .contact-form textarea{
+  margin: 1em auto;
+  width: 40%;
+}
+.contact-form form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label{
+  font-size: 1.2em;
+  color: #efefef;
+}
+.footer-container{
+  margin: 1.5em 2em;
+  text-align: left;
+}
+.footer-container a{
+  text-align: left;
+  color: #efefef;
+  margin-top: 1.5em;
+  padding: .75em;
+  text-decoration: none;
 }

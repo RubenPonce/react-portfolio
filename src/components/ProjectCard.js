@@ -17,7 +17,7 @@ export class ProjectCard extends Component {
           </Link>
           <div className="project-tech">
             {project.technologies.map((tech, i) => (
-              <i className={`fab fa-${tech} fa-2x`} />
+              <i className={`fab fa-${tech} fa-2x`} key={i} />
             ))}
           </div>
         </div>

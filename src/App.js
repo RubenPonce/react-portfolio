@@ -7,6 +7,8 @@ import ProjectCard from  './components/ProjectCard';
 import Introduction from './components/Introduction';
 import Project from './components/Project'
 import Navigation from './components/Navigation';
+import Contact from './components/Contact'
+
 export class App extends Component {
   state = {
     projects:data
@@ -30,7 +32,7 @@ export class App extends Component {
           </div>)
         }} />
         <Route exact path="/project/:id" render={(props)=><Project {...props} projects={this.state.projects} /> }/>
-        
+        <Contact/>
       </div>
     )
   }
