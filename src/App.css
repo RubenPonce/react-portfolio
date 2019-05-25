@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   padding-top: 10em;
-  background: url(./components/images/trianglify.svg);
+  background: url(./components/trianglify.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -68,8 +68,6 @@
 .nav a{
   margin: 0 3em;
   color: white;
-  
-  
 }
 .introduction{
   margin-bottom: 5em;

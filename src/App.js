@@ -20,10 +20,11 @@ export class App extends Component {
   // }
 
   render() {
-    
+    console.log()
     return (
       <div className="App">
         <Navigation/>
+        {/* <img src={'/images/sourcer.png'} /> */}
         <Route exact path="/" render={(props)=>{
          return ( 
          <div>
@@ -31,7 +32,7 @@ export class App extends Component {
             <Projects {...props} projects={this.state.projects} />  
           </div>)
         }} />
-        <Route exact path="/project/:id" render={(props)=><Project {...props} projects={this.state.projects} /> }/>
+        <Route exact path="/project/" render={(props)=><Project {...props} projects={this.state.projects} /> }/>
         <Contact/>
       </div>
     )

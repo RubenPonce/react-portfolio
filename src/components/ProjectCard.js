@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {Button} from 'reactstrap'
-import images from './images/pine.png'
+// import images from '../../public/images/pine.png'
 
 export class ProjectCard extends Component {
   render() {
     const project = this.props.project;
     console.log(this.props);
+    // console.log(images)
     
     return (
       <div className="project-card">
         <div className="landing-image-container">
           <Link to={this.props.projectRoute}>
-            <img className="landing-image" src={'./images/pine.png'} />
-           
+            <img className="landing-image" src={this.props.project.landingImage} />
+           {console.log(this.props.projects.landingImage)}
           </Link>
           <div className="project-tech">
             {project.technologies.map((tech, i) => (

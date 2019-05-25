@@ -10,6 +10,7 @@ class Contact extends Component {
     sent: false,
     ButtonText: "Send Message"
   };
+  
   FormSubmit = e => {
     e.preventDefault();
 
@@ -24,13 +25,13 @@ class Contact extends Component {
     };
 
     axios
-      .post("API_URI", data)
+      .post("https://formcarry.com/s/FZiCGxWL6oO", data, {headers: {"Accept": "application/json"}})
       .then(res => {
-          console.log(res)
+          console.log(res.data)
         this.setState({ sent: true }, this.resetForm());
       })
-      .catch(() => {
-        console.log("Message not sent");
+      .catch((err) => {
+        console.log("Message not sent",err);
       });
   };
   resetForm = () => {

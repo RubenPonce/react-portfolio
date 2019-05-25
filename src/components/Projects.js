@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
 import ProjectCard from "./ProjectCard"
 
-
 export class Projects extends Component {
 
 
   render() {
     const projects = this.props.projects
-    console.log(projects);
-
     return (
       <div>
       <div className="project-intro">
-
         <h2>Projects: </h2>
         <p>Click for more info</p>
         </div>
