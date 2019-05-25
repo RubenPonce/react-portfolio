@@ -115,6 +115,13 @@ background: linear-gradient(173deg, rgba(255, 255, 255, 0) 30%, #F0F0F0 30%);
 width: 100%;
 
 }
+.project-cta a{
+  text-decoration: none;
+
+}
+.project-cta a:hover{
+  color: #efefef;
+}
 .landing-image-container{
   width: 55%;
   align-self: flex-end;
@@ -152,6 +159,11 @@ margin: 1em;
 .project-card:nth-child(odd){
   flex-direction: row-reverse;
 }
+.text-input{
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form{
   width: 100%;
   padding: 4em 0 0;
@@ -160,6 +172,12 @@ margin: 1em;
   background: linear-gradient(50deg, #3AA7FF 20%,rgb(59, 127, 182) 60%, rgb(108, 179, 237) 100%)
   /* background: linear-gradient(135deg, white 20%,black 60%, purple 100%) */
   
+}
+.introduction a:hover{
+  color: black;
+}
+nav a:hover {
+  color: #3AA7FF;
 }
 .contact-form input, .contact-form textarea{
   margin: 1em auto;

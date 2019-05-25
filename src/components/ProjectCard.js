@@ -12,10 +12,7 @@ export class ProjectCard extends Component {
     return (
       <div className="project-card">
         <div className="landing-image-container">
-          <Link to={this.props.projectRoute}>
             <img className="landing-image" src={this.props.project.landingImage} />
-           {console.log(this.props.projects.landingImage)}
-          </Link>
           <div className="project-tech">
             {project.technologies.map((tech, i) => (
               <i className={`fab fa-${tech} fa-2x`} key={i} />
@@ -25,10 +22,9 @@ export class ProjectCard extends Component {
         <div className="project-header">
         <h3>{project.project_name}</h3>
         <p> {project.description}</p>
-        <Button color="primary" style={{margin: '0 .5em'}} outline><a href={project.demo} target="_blank" rel="noopener noreferrer">live demo</a></Button>
-        <Button color="primary" style={{margin: '0 .5em'}} outline><a href={project.sourceCode} target="_blank" rel="noopener noreferrer">source code</a></Button>
+        <a href={project.demo} target="_blank" rel="noopener noreferrer"><Button color="primary" className="project-cta" style={{margin: '0 .5em'}} outline>live demo</Button></a>
+        <a href={project.sourceCode} target="_blank" rel="noopener noreferrer"><Button color="primary" className="project-cta" style={{margin: '0 .5em'}} outline>source code</Button></a>
         </div>
-        
       </div>
     );
   }

@@ -25,7 +25,7 @@ export default class Navigation extends React.Component {
     <div  className="nav">
           <Route path="/project/:id" render={()=><Link to="/"  >Projects </Link>} />
           <a href="https://sourcerer.io/rubenponce" target="_blank" rel="noopener noreferrer">Technologies Used</a>
-          <Link to="/" >Contact</Link>
+          <a href="#contact">Contact</a>
           
     </div>
     <div className="social-links">

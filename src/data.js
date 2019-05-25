@@ -22,7 +22,7 @@ const data =  [
         "technologies":["js","css3-alt","html5","less"],
         "demo":"https://pintereachui.netlify.com/",
         "sourceCode":"https://github.com/pintreach/buildweek-pintreach-UI",
-        landingImage: '/images/pinetreach.png'
+        landingImage: '/images/pintreach.png'
      },
      
     ]

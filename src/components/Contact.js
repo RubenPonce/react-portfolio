@@ -47,9 +47,14 @@ class Contact extends Component {
     return (
       <div className="contact-form">
       <Form  onSubmit={e => this.FormSubmit(e)}>
+
+      <div className="input-label-containers">
+
+    <div className="text-input">
         <Label className="message" htmlFor="message-Input">
           Your Message
         </Label>
+    
         <textarea
           onChange={e => this.setState({ message: e.target.value })}
           name="message"
@@ -59,7 +64,9 @@ class Contact extends Component {
           value={this.state.message}
           required
         />
-
+            </div>
+          </div>
+<div className="input-label-containers">
         <Label className="message-name" htmlFor="message-name">
           Your Name
         </Label>
@@ -71,7 +78,8 @@ class Contact extends Component {
           placeholder="Your Name"
           value={this.state.name}
         />
-
+        </div>
+       
         <Label className="message-email" htmlFor="message-email">
           Your Email
         </Label>
@@ -86,7 +94,7 @@ class Contact extends Component {
         />
 
         <div className="Button--container">
-          <Button type="submit" className="contact-form-btn" color="info">
+          <Button type="submit" className="contact-form-btn" color="secondary">
             {this.state.ButtonText}
           </Button>
         </div>
