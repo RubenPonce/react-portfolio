@@ -10,7 +10,6 @@ export class Projects extends Component {
       <div>
       <div className="project-intro">
         <h2>Projects: </h2>
-        <p>Click for more info</p>
         </div>
         <div className="projects-container">
           {projects.map(projectCard => {

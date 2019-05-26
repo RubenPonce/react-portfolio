@@ -57,11 +57,11 @@ html{
 .header .social-links {
   display: flex;
   justify-content: space-evenly;
-  color: white;
+  color: #efefef;
 
 }
 .social-links a{
-  color: white;
+  color: #efefef;
   margin: 0 1em;
   padding: 0 .75em;
 }
@@ -73,7 +73,13 @@ html{
 }
 .nav a{
   margin: 0 3em;
-  color: white;
+  color: #efefef;
+  padding: .75em;
+  text-decoration: none;
+
+}
+.nav a:hover{
+  color: #efefef;
 }
 .introduction{
   margin-bottom: 5em;
@@ -84,10 +90,10 @@ html{
 
 }
 .introduction a{
-  color: white;
+  color: #efefef;
   
   
-  text-decoration: underline;
+  text-decoration: none;
 }
 .project-intro h2, .project-intro p{ 
   font-family: 'Raleway', cursive;
@@ -182,11 +188,10 @@ margin: 1em;
 
 .contact-form{
   width: 100%;
-  padding: 4em 0 0;
   display: flex;
   flex-direction: column;
   background: linear-gradient(50deg, #3AA7FF 20%,rgb(59, 127, 182) 60%, rgb(108, 179, 237) 100%)
-  /* background: linear-gradient(135deg, white 20%,black 60%, purple 100%) */
+  /* background: linear-gradient(135deg, #efefef 20%,black 60%, purple 100%) */
   
 }
 .introduction a:hover{
@@ -194,6 +199,10 @@ margin: 1em;
 }
 nav a:hover {
   color: #3AA7FF;
+}
+.contact-form h2{
+  color: #efefef;
+  margin: 1em 63% 1em 1EM;
 }
 .contact-form input, .contact-form textarea{
   margin: 1em auto;

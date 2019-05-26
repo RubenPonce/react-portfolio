@@ -45,7 +45,8 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="contact-form">
+      <div className="contact-form"> 
+      <h2>Contact:</h2>
       <Form  onSubmit={e => this.FormSubmit(e)}>
 
       <div className="input-label-containers">
