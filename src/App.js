@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import './App.css';
-import data from "./data"
-import {Route} from 'react-router-dom'
-import Projects from './components/Projects'
-import ProjectCard from  './components/ProjectCard';
-import Introduction from './components/Introduction';
-import Project from './components/Project'
-import Navigation from './components/Navigation';
-import Contact from './components/Contact'
+import React, { Component } from "react";
+import "./App.css";
+import data from "./data";
+import { Route } from "react-router-dom";
+import Projects from "./components/Projects";
+import ProjectCard from "./components/ProjectCard";
+import Introduction from "./components/Introduction";
+import Project from "./components/Project";
+import Navigation from "./components/Navigation";
+import Contact from "./components/Contact";
 
 export class App extends Component {
   state = {
-    projects:data
-  }
+    projects: data
+  };
   // componentDidMount(){ WHEN SERVER IS UP, MAKE AXIOS SET STATE IN APP
   //   this.setState({
   //     projects: data
@@ -20,24 +20,33 @@ export class App extends Component {
   // }
 
   render() {
-    console.log()
     return (
       <div className="App">
-        <Navigation/>
-        {/* <img src={'/images/sourcer.png'} /> */}
-        <Route exact path="/" render={(props)=>{
-         return ( 
-         <div>
-             <Introduction />
-            <Projects {...props} projects={this.state.projects} />  
-          </div>)
-        }} />
-        <Route exact path="/project/" render={(props)=><Project {...props} projects={this.state.projects} /> }/>
-        <Contact/>
+        <Navigation />
+
+        <Route
+          exact
+          path="/"
+          render={props => {
+            return (
+              <div>
+                <Introduction />
+                <Projects {...props} projects={this.state.projects} />
+              </div>
+            );
+          }}
+        />
+        <Route
+          exact
+          path="/project/"
+          render={props => (
+            <Project {...props} projects={this.state.projects} />
+          )}
+        />
+        <Contact />
       </div>
-    )
+    );
   }
 }
 
-export default App
-
+export default App;

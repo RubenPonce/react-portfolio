@@ -7,9 +7,7 @@ export class Project extends Component {
         project: {},
     }
     componentDidMount(){
-        console.log(this.props)
-        this.props.projects.map(project=>{
-            console.log(project.id)
+        this.props.projects.map(project=>{  
             if(this.props.match.params.id===project.id){
                 this.setState({
                     project: project

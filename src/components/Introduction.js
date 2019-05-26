@@ -5,13 +5,16 @@ export default function Introduction() {
     <div className="introduction">
       <h1>
         I'm Ruben Ponce, a full stack{" "}
-        <a href="https://github.com/RubenPonce" target="_blank" rel="noopener noreferrer" >
+        <a
+          href="https://github.com/RubenPonce"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           developer
-        </a>.
+        </a>
+        .
       </h1>
-      <div>
-        
-      </div>
+      <div />
     </div>
   );
 }
