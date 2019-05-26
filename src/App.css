@@ -81,6 +81,7 @@ html{
 .introduction h1{
   color: rgba(250, 250, 250, 0.995);
   font-size: 2.5rem;
+
 }
 .introduction a{
   color: white;
@@ -92,7 +93,8 @@ html{
   font-family: 'Raleway', cursive;
   font-weight: 600;
   margin-right: 65%;
-  color: #efefef
+  color: #efefef;
+  margin-bottom: 1em;
 
 }
 .project-intro h2 {
@@ -204,7 +206,7 @@ nav a:hover {
 .contact-form label{
   font-size: 1.3em;
   color: #efefef;
-  margin-bottom: 1em 0;
+  margin-bottom: 1em 0 ;
 }
 .footer-container{
   margin: 1.5em 2em;
