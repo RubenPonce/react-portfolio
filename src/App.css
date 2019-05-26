@@ -203,6 +203,7 @@ nav a:hover {
 .contact-form h2{
   color: #efefef;
   margin: 1em 63% 1em 1EM;
+  font-size: 2rem;
 }
 .contact-form input, .contact-form textarea{
   margin: 1em auto;
