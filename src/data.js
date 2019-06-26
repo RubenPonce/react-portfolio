@@ -3,7 +3,7 @@ const data =  [
      "project_name":"∑tockly",
         "description":"A build week application where I collaborted with a team of engineers and data scientists to simplify the decision in either buying, selling, or holding a specific stock.",
         "technologies":["js","css3-alt","sass", "react"],
-        "demo":"https://stockly-fe.netlify.com/",
+        "demo":"https://getstockly.com/",
         "sourceCode":"https://github.com/lambda-stockly/build-stockly-frontend",
         landingImage: '/images/stockly.png'
         
