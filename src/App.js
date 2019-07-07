@@ -36,14 +36,7 @@ export class App extends Component {
             );
           }}
         />
-        <Route
-          exact
-          path="/project/"
-          render={props => (
-            <Project {...props} projects={this.state.projects} />
-          )}
-        />
-        <Contact />
+        <Route exact path="/contact" component={Contact}/>
       </div>
     );
   }

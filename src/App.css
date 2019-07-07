@@ -183,21 +183,21 @@ html {
 .project-card:nth-child(odd) {
   flex-direction: row-reverse;
 }
-.text-input {
-  display: flex;
-  flex-direction: column;
-}
+/*.text-input {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
 
 .contact-form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    50deg,
-    #3aa7ff 20%,
-    rgb(59, 127, 182) 60%,
-    rgb(108, 179, 237) 100%
-  );
+  /*background: linear-gradient(*/
+  /*  50deg,*/
+  /*  #3aa7ff 20%,*/
+  /*  rgb(59, 127, 182) 60%,*/
+  /*  rgb(108, 179, 237) 100%*/
+  /*);*/
   /* background: linear-gradient(135deg, #efefef 20%,black 60%, purple 100%) */
 }
 .introduction a:hover {
@@ -206,36 +206,7 @@ html {
 nav a:hover {
   color: #3aa7ff;
 }
-.contact-form h2 {
-  color: #efefef;
-  margin: 1em 63% 1em 1em;
-  font-size: 2rem;
-}
-.contact-form input,
-.contact-form textarea {
-  margin: 1em auto;
-  width: 40%;
-}
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-.contact-form label {
-  font-size: 1.3em;
-  color: #efefef;
-  margin-bottom: 1em 0;
-}
-.footer-container {
-  margin: 1.5em 2em;
-  text-align: left;
-}
-.footer-container a {
-  text-align: left;
-  color: #efefef;
-  margin-top: 1.5em;
-  padding: 0.75em;
-  text-decoration: none;
-}
+
 
 @media (max-width: 1061px) {
   .introduction h1{
@@ -270,12 +241,12 @@ nav a:hover {
     align-self: center;
   }
 
-  .text-input textarea {
-    width: 65%;
-  }
-  .input-label-containers input {
-    width: 65%;
-  }
+  /*.text-input textarea {*/
+  /*  width: 65%;*/
+  /*}*/
+  /*.input-label-containers input {*/
+  /*  width: 65%;*/
+  /*}*/
 }
 @media (max-width: 770px) {
   .project-card:nth-child(odd) {
@@ -316,14 +287,14 @@ nav a:hover {
     align-self: center;
   }
 
-  .text-input textarea {
-    width: 90%;
-  }
-  .input-label-containers input {
-    width: 90%;
-  }
-  .contact-form button {
-    width: 90%;
-    margin: 1em 0;
-  }
+  /*.text-input textarea {*/
+  /*                  width: 90%;*/
+  /*                }*/
+  /*.input-label-containers input {*/
+  /*  width: 90%;*/
+  /*}*/
+  /*.contact-form button {*/
+  /*  width: 90%;*/
+  /*  margin: 1em 0;*/
+  /*}*/
 }

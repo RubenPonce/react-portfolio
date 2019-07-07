@@ -1,7 +1,76 @@
 import React, { Component } from "react";
 import axios from "axios";
+import styled from "styled-components"
 import { Form, Label, Input, Button } from "reactstrap";
 import Footer from "./Footer";
+const ContactFormDiv = styled.form`
+max-width: 800px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+  h2{
+  text-align: center;
+  margin: 3em 0;
+  color: #efefef;
+  font-weight: 600;
+  }
+   button{
+  border: transparent;
+  width: 200px;
+  border-radius: .25em;
+  padding: .75em .5em;
+  color: 
+  margin: .75em;
+  }
+div{
+  label{
+    display: block;
+    text-align: left;
+    color: #efefef;
+    font-size: 1.5rem;
+    text-transform: uppercase
+    letter-spacing: 1px;
+  }
+  input, textarea{
+    width: 100%;
+    margin: 1em 0;
+    font-size: 1.2rem;
+    padding: 1em;
+    border-radius: .3em;
+    color: #495057;
+  }
+ 
+}
+
+`
+/*
+.contact-form
+.contact-form input,
+.contact-form textarea {
+  margin: 1em auto;
+  width: 40%;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label {
+  font-size: 1.3em;
+  color: #efefef;
+  margin-bottom: 1em 0;
+}
+.footer-container {
+  margin: 1.5em 2em;
+  text-align: left;
+}
+.footer-container a {
+  text-align: left;
+  color: #efefef;
+  margin-top: 1.5em;
+  padding: 0.75em;
+  text-decoration: none;
+}
+* */
 class Contact extends Component {
   state = {
     name: "",
@@ -47,64 +116,62 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="contact-form">
+      <ContactFormDiv>
         <h2>Contact:</h2>
-        <Form onSubmit={e => this.FormSubmit(e)}>
-          <div className="input-label-containers">
-            <div className="text-input">
-              <Label className="message" htmlFor="message-Input">
-                Your Message
-              </Label>
+        <form onSubmit={e => this.FormSubmit(e)}>
+<div>
+              <label className="message" htmlFor="message-Input">
+                Message
+              </label>
 
               <textarea
                 onChange={e => this.setState({ message: e.target.value })}
                 name="message"
                 className="message-Input"
                 type="text"
-                placeholder="Please write your message here"
                 value={this.state.message}
                 required
               />
-            </div>
-          </div>
-          <div className="input-label-containers">
-            <Label className="message-name" htmlFor="message-name">
-              Your Name
-            </Label>
-            <Input
+</div>
+          <div>
+            <label className="message-name" htmlFor="message-name">
+              Name
+            </label>
+            <input
               onChange={e => this.setState({ name: e.target.value })}
               name="name"
               className="message-name"
               type="text"
-              placeholder="Your Name"
               value={this.state.name}
             />
-
-            <Label className="message-email" htmlFor="message-email">
-              Your Email
-            </Label>
-            <Input
+          </div>
+          <div>
+            <label className="message-email" htmlFor="message-email">
+              Email
+            </label>
+            <input
               onChange={e => this.setState({ email: e.target.value })}
               name="email"
+              id="message-email"
               className="message-email"
               type="email"
-              placeholder="your@email.com"
               required
               value={this.state.email}
             />
           </div>
-          <div className="Button--container">
-            <Button
+
+
+            <button
               type="submit"
               className="contact-form-btn"
               color={!this.state.sent ? "secondary" : "success"}
             >
               {this.state.ButtonText}
-            </Button>
-          </div>
-        </Form>
+            </button>
+
+        </form>
         <Footer />
-      </div>
+      </ContactFormDiv>
     );
   }
 }
