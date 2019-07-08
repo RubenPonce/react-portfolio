@@ -59,7 +59,6 @@ img{
   box-shadow: 6px 8px 42px 1px rgba(0, 0, 0, 0.15);
 }
 @media(max-width:${tabletView}px){
-  
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -67,7 +66,6 @@ img{
    &:nth-child(odd){
    flex-direction: column;
   }
-  
    .project-header{
    width: 80%;
    }
