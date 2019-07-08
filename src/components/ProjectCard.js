@@ -3,12 +3,21 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 // import images from '../../public/images/pine.png'
 import styled from "styled-components";
-import {desktopView} from "./ResponsiveVars";
+import {desktopView, mobileView, tabletView} from "./ResponsiveVars";
 
 const LandingImageContainer = styled.div`
-    width: 80%;
+    width: 55%;
     align-self: flex-end;
-    margin: 3em auto 0 auto;
+    margin: 3em 0;
+    @media(max-width: ${tabletView}px){
+     width: 80%;
+    align-self: flex-end;
+    margin: 3em auto 0;
+    }
+    @media(max-width: ${mobileView}px ){
+        width: 95%;
+   
+    }
 `
 const ProjectCardDiv = styled.div`
   display: flex;
@@ -18,11 +27,18 @@ const ProjectCardDiv = styled.div`
   width: 75%;
   box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.7);
   background: #efefef;
-  margin: 1em;
+  margin: 1em auto;
+  .project-header{
+      margin: 1em 0;
+    font-family: Raleway, Arial, sans-serif;
+    width: 40%;
+    align-self: center;
+    
+  }
   .project-tech{
     display: flex;
     align-self: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 1em auto;
     justify-content: center;
     align-items: center;
@@ -37,13 +53,35 @@ const ProjectCardDiv = styled.div`
    flex-direction: row-reverse;
   }
   
-  
 img{
   width: 85%;
   margin: 0 auto;
   box-shadow: 6px 8px 42px 1px rgba(0, 0, 0, 0.15);
 }
-
+@media(max-width:${tabletView}px){
+  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+   &:nth-child(odd){
+   flex-direction: column;
+  }
+  
+   .project-header{
+   width: 80%;
+   }
+}
+@media(max-width: ${mobileView}px){
+  width: 95%;
+  flex-direction: column;
+  .project-header{
+    width: 90%;
+   }
+   &:nth-child(odd){ //specificity makes me have to declare this
+   flex-direction: column;
+  }
+}
 
 @media(min-width: ${desktopView}px){
     img{
@@ -53,7 +91,7 @@ img{
     
     max-width: 1350px;
     padding: 3em;
-    
+
 
 }
 `
