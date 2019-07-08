@@ -1,8 +1,11 @@
 import React from "react";
-
+import styled from "styled-components";
+const Intro = styled.div`
+      padding-top: 10em;
+`
 export default function Introduction() {
   return (
-    <div className="introduction">
+    <Intro className="introduction">
       <h1>
         I'm Ruben Ponce, a full stack{" "}
         <a
@@ -15,6 +18,6 @@ export default function Introduction() {
         .
       </h1>
       <div />
-    </div>
+    </Intro>
   );
 }

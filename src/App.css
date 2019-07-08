@@ -1,11 +1,14 @@
 .App {
   text-align: center;
-  padding-top: 10em;
   background: url(./components/trianglify.svg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   height: 100%;
-  max-width: 1920px;
+
+}
+body{
+  background: url(./components/trianglify.svg);
+  background-size: cover;
 }
 
 h1,

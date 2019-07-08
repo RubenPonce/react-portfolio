@@ -2,40 +2,46 @@ import React, { Component } from "react";
 import axios from "axios";
 import styled from "styled-components"
 import { Form, Label, Input, Button } from "reactstrap";
+import {Link} from "react-router-dom";
 import Footer from "./Footer";
 const ContactFormDiv = styled.form`
-max-width: 800px;
+max-width: 650px;
 margin: 0 auto;
 display: flex;
 flex-direction: column;
+padding-bottom: 4em;
   h2{
   text-align: center;
-  margin: 3em 0;
+  margin: 3em 0 0 0;
   color: #efefef;
   font-weight: 600;
   }
-   button{
-  border: transparent;
-  width: 200px;
-  border-radius: .25em;
-  padding: .75em .5em;
-  color: 
-  margin: .75em;
+   .button-container {
+   display: flex;
+   justify-content: space-between;
+       button{
+      border: transparent;
+      width: 200px;
+      border-radius: .25em;
+      padding: .75em .5em;
+      margin: .75em 0;
+      }
   }
 div{
   label{
     display: block;
     text-align: left;
     color: #efefef;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase
     letter-spacing: 1px;
+    margin: 1em 0;
   }
   input, textarea{
     width: 100%;
-    margin: 1em 0;
+    margin: .5em 0;
     font-size: 1.2rem;
-    padding: 1em;
+    padding: .75em;
     border-radius: .3em;
     color: #495057;
   }
@@ -119,32 +125,20 @@ class Contact extends Component {
       <ContactFormDiv>
         <h2>Contact:</h2>
         <form onSubmit={e => this.FormSubmit(e)}>
-<div>
-              <label className="message" htmlFor="message-Input">
-                Message
-              </label>
+            <div>
+                <label className="message-name" htmlFor="message-name">
+                    Name
+                </label>
+                <input
+                    onChange={e => this.setState({ name: e.target.value })}
+                    name="name"
+                    className="message-name"
+                    type="text"
+                    value={this.state.name}
+                />
+            </div>
 
-              <textarea
-                onChange={e => this.setState({ message: e.target.value })}
-                name="message"
-                className="message-Input"
-                type="text"
-                value={this.state.message}
-                required
-              />
-</div>
-          <div>
-            <label className="message-name" htmlFor="message-name">
-              Name
-            </label>
-            <input
-              onChange={e => this.setState({ name: e.target.value })}
-              name="name"
-              className="message-name"
-              type="text"
-              value={this.state.name}
-            />
-          </div>
+
           <div>
             <label className="message-email" htmlFor="message-email">
               Email
@@ -159,8 +153,21 @@ class Contact extends Component {
               value={this.state.email}
             />
           </div>
+            <div>
+                <label className="message" htmlFor="message-Input">
+                    Message
+                </label>
 
-
+                <textarea
+                    onChange={e => this.setState({ message: e.target.value })}
+                    name="message"
+                    className="message-Input"
+                    type="text"
+                    value={this.state.message}
+                    required
+                />
+            </div>
+            <div className="button-container">
             <button
               type="submit"
               className="contact-form-btn"
@@ -168,7 +175,8 @@ class Contact extends Component {
             >
               {this.state.ButtonText}
             </button>
-
+                <Link to="/"> <button>cancel</button></Link>
+            </div>
         </form>
         <Footer />
       </ContactFormDiv>
