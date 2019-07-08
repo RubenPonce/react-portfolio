@@ -16,7 +16,6 @@ export class Projects extends Component {
                 {...this.props}
                 project={projectCard}
                 key={projectCard.id}
-                projectRoute={`/project/${projectCard.id}`}
               />
             );
           })}

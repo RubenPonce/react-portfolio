@@ -1,20 +1,23 @@
 import React, { Component } from "react";
 import axios from "axios";
 import styled from "styled-components"
-import { Form, Label, Input, Button } from "reactstrap";
 import {Link} from "react-router-dom";
 import Footer from "./Footer";
-const ContactFormDiv = styled.form`
+
+const ContactFormDiv = styled.div`
 max-width: 650px;
 margin: 0 auto;
 display: flex;
 flex-direction: column;
-padding-bottom: 4em;
+padding-top: 6em;
+
+height: auto;
   h2{
   text-align: center;
   margin: 3em 0 0 0;
   color: #efefef;
   font-weight: 600;
+  font-size: 2.0rem;
   }
    .button-container {
    display: flex;
@@ -32,15 +35,15 @@ div{
     display: block;
     text-align: left;
     color: #efefef;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase
     letter-spacing: 1px;
-    margin: 1em 0;
+    margin: 1.5em 0 0 0;
   }
   input, textarea{
     width: 100%;
-    margin: .5em 0;
-    font-size: 1.2rem;
+    margin: 0 0 .5em 0;
+    font-size: 1.4rem;
     padding: .75em;
     border-radius: .3em;
     color: #495057;
@@ -123,7 +126,7 @@ class Contact extends Component {
   render() {
     return (
       <ContactFormDiv>
-        <h2>Contact:</h2>
+        <h2>Contact Me</h2>
         <form onSubmit={e => this.FormSubmit(e)}>
             <div>
                 <label className="message-name" htmlFor="message-name">
@@ -175,7 +178,7 @@ class Contact extends Component {
             >
               {this.state.ButtonText}
             </button>
-                <Link to="/"> <button>cancel</button></Link>
+                <Link to="/"> <button>Cancel</button></Link>
             </div>
         </form>
         <Footer />
