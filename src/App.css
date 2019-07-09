@@ -222,11 +222,11 @@ nav a:hover {
   /*  align-items: center;*/
   /*  width: 90%;*/
   /*}*/
-  .landing-image-container {
-    width: 80%;
-    align-self: flex-end;
-    margin: 3em auto 0 auto;
-  }
+  /*.landing-image-container {*/
+  /*  width: 80%;*/
+  /*  align-self: flex-end;*/
+  /*  margin: 3em auto 0 auto;*/
+  /*}*/
   /*.project-card:nth-child(even) {*/
   /*  flex-direction: column;*/
   /*  justify-content: center;*/
@@ -247,11 +247,21 @@ nav a:hover {
   /*  width: 65%;*/
   /*}*/
 }
+.hamburger-menu{
+  border: 1px solid red;
+  position: absolute;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 770px) {
 
-  /*.nav a {*/
-  /*  display: none;*/
-  /*}*/
+  .nav a {
+     display: none;
+   }
+  .hamburger{
+    display: inline-block;
+  }
   .social-links {
     margin: 0 auto;
   }
@@ -263,14 +273,16 @@ nav a:hover {
     margin: 0 2em;
     
   }
+  .social-links a {
+    margin: 0 ;
+    padding: 0;
+  }
+
   .contact-form h2 {
     font-size: 1.7rem;
     margin-right: 70%;
   }
-  .social-links a {
-        margin: 0 ; 
- padding: 0; 
-  }
+
   .project-header {
     margin: 1em auto;
     font-family: Raleway, Arial, sans-serif;

@@ -56,7 +56,12 @@ export default class Navigation extends React.Component {
                 <a href="https://sourcerer.io/rubenponce" target="_blank" rel="noopener noreferrer">Tech Stack Stats</a>
             </div>)}
     <div className="social-links">
-        {this.state.useHamburger ?<a> <i className="fas fa-bars fa-2x"></i></a> : null}
+        {this.state.useHamburger ? <a> <i className="fas fa-bars fa-2x"></i></a> :  window.screen.width <= mobileView ? <a className="hamburger"> <i className="fas fa-bars fa-2x"></i></a> : null}
+        {/*<div className="hamburger-menu">*/}
+        {/*    <NavLink exact={true} to="/">Projects</NavLink>*/}
+        {/*    <NavLink exact={true} to="/contact">Contact</NavLink>*/}
+        {/*    <a href="https://sourcerer.io/rubenponce" target="_blank" rel="noopener noreferrer">Tech Stack Stats</a>*/}
+        {/*</div>*/}
        <a href="https://www.linkedin.com/in/ruben-ponce/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin fa-2x"></i></a> 
        <a href="https://www.github.com/rubenponce/" target="_blank" rel="noopener noreferrer"><i className="fab fa-github fa-2x"></i></a>
        <a href="https://www.twitter.com/titratecode/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter fa-2x"></i></a>
