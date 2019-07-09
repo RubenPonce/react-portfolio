@@ -22,7 +22,7 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navigation />
+
 
         <Route
           exact
@@ -30,6 +30,7 @@ export class App extends Component {
           render={props => {
             return (
               <div>
+                  <Navigation />
                 <Introduction />
                 <Projects {...props} projects={this.state.projects} />
               </div>
@@ -37,6 +38,7 @@ export class App extends Component {
           }}
         />
         <Route exact path="/contact" component={Contact}/>
+
       </div>
     );
   }

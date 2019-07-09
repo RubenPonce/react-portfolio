@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import ProjectCard from "./ProjectCard";
+import styled from "styled-components";
+import {Overlay} from "./ResponsiveVars";
+const ProjectContainer = Overlay('173');//degree rotate overlay
 
 export class Projects extends Component {
   render() {
@@ -9,7 +12,8 @@ export class Projects extends Component {
         <div className="project-intro">
           <h2>Projects: </h2>
         </div>
-        <div className="projects-container">
+
+            <ProjectContainer>
           {projects.map(projectCard => {
             return (
               <ProjectCard
@@ -19,7 +23,8 @@ export class Projects extends Component {
               />
             );
           })}
-        </div>
+            </ProjectContainer>
+
       </div>
     );
   }

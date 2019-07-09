@@ -1,14 +1,11 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
-// import images from '../../public/images/pine.png'
 import styled from "styled-components";
 import {desktopView, mobileView, tabletView} from "./ResponsiveVars";
 
 const LandingImageContainer = styled.div`
     width: 55%;
     align-self: flex-end;
-    margin: 3em 0;
     @media(max-width: ${tabletView}px){
      width: 80%;
     align-self: flex-end;
@@ -28,6 +25,7 @@ const ProjectCardDiv = styled.div`
   box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.7);
   background: #efefef;
   margin: 1em auto;
+  
   .project-header{
       margin: 1em 0;
     font-family: Raleway, Arial, sans-serif;
@@ -98,6 +96,7 @@ export class ProjectCard extends Component {
     const project = this.props.project;
 
     return (
+
       <ProjectCardDiv className="project-card">
         <LandingImageContainer>
           <img
@@ -138,6 +137,7 @@ export class ProjectCard extends Component {
           </a>
         </div>
       </ProjectCardDiv>
+
     );
   }
 }

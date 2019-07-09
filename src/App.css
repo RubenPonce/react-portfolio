@@ -6,6 +6,11 @@
   height: 100%;
 
 }
+.nav .active{
+  font-weight: 600;
+
+}
+
 body{
   background: url(./components/trianglify.svg);
   background-size: cover;
@@ -244,9 +249,9 @@ nav a:hover {
 }
 @media (max-width: 770px) {
 
-  .nav a {
-    display: none;
-  }
+  /*.nav a {*/
+  /*  display: none;*/
+  /*}*/
   .social-links {
     margin: 0 auto;
   }
