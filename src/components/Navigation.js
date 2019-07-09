@@ -2,6 +2,9 @@ import React from 'react'
 import {NavLink} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import {mobileView} from "./ResponsiveVars";
+import {Collapse,
+    Navbar,
+    NavbarToggler} from "reactstrap"
 export default class Navigation extends React.Component {
     state = {
         useHamburger: false,
