@@ -254,6 +254,12 @@ nav a:hover {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 993px) {
+  .nav a{
+    padding: 0 1em;
+    margin: 0 1em;
+  }
+}
 @media (max-width: 770px) {
 
   .nav a {
