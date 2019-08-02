@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 import styled from "styled-components"
-import { Form, Label, Input, Button } from "reactstrap";
-import Footer from "./Footer";
-const ContactFormDiv = styled.form`
+const ContactFormDiv = styled.div`
 max-width: 800px;
-margin: 0 auto;
+margin: 0 auto 4em auto;
 display: flex;
 flex-direction: column;
   h2{
@@ -19,8 +17,7 @@ flex-direction: column;
   width: 200px;
   border-radius: .25em;
   padding: .75em .5em;
-  color: 
-  margin: .75em;
+  margin: 2.5em 0;
   }
 div{
   label{
@@ -170,7 +167,6 @@ class Contact extends Component {
             </button>
 
         </form>
-        <Footer />
       </ContactFormDiv>
     );
   }

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
-// import images from '../../public/images/pine.png'
 
 export class ProjectCard extends Component {
   render() {
@@ -13,6 +11,7 @@ export class ProjectCard extends Component {
           <img
             className="landing-image"
             src={this.props.project.landingImage}
+            alt="project card "
           />
           <div className="project-tech">
             {project.technologies.map((tech, i) => (

@@ -3,26 +3,19 @@ import "./App.css";
 import data from "./data";
 import { Route } from "react-router-dom";
 import Projects from "./components/Projects";
-import ProjectCard from "./components/ProjectCard";
 import Introduction from "./components/Introduction";
-import Project from "./components/Project";
 import Navigation from "./components/Navigation";
 import Contact from "./components/Contact";
-
+import BottomContent from "./components/BottomContent"
 export class App extends Component {
   state = {
     projects: data
   };
-  // componentDidMount(){ WHEN SERVER IS UP, MAKE AXIOS SET STATE IN APP
-  //   this.setState({
-  //     projects: data
-  //   })
-  // }
+
 
   render() {
     return (
       <div className="App">
-        <Navigation />
 
         <Route
           exact
@@ -30,13 +23,21 @@ export class App extends Component {
           render={props => {
             return (
               <div>
+                <Navigation {...props} />
                 <Introduction />
                 <Projects {...props} projects={this.state.projects} />
+                <BottomContent />
               </div>
             );
           }}
         />
-        <Route exact path="/contact" component={Contact}/>
+        <Route exact path="/contact" render={(props)=>{
+          return (<div>
+           <Navigation {...props} />
+          <Contact/>
+          </div>)
+          }
+          }/>
       </div>
     );
   }

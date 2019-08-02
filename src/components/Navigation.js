@@ -1,7 +1,6 @@
-import React from 'react'
-import {Link} from 'react-router-dom';
-import {Route} from 'react-router-dom';
-export default class Navigation extends React.Component {
+import React, {Component} from 'react'
+import {Link} from "react-router-dom";
+export default class Navigation extends Component {
     
     handleScroll = () =>{
        const header =  document.querySelector('.header');
@@ -20,12 +19,14 @@ export default class Navigation extends React.Component {
         window.removeEventListener('scroll', this.handleScroll)
       }
 
-  render(){return (
+  render(){
+      console.log(this.props)
+      const {pathname} = this.props.history.location
+      return (
     <div className="header">
     <div  className="nav">
-          <Route path="/project/:id" render={()=><Link to="/"  >Projects </Link>} />
-          <a href="https://sourcerer.io/rubenponce" target="_blank" rel="noopener noreferrer">Technologies Used</a>
-          <Link to="/contact">Contact</Link>
+            {pathname ==="/contact" ? <Link to="/">Home</Link> : pathname==="/" ?  <Link to="/contact">Contact</Link> : <Link to="/">Home</Link>  }
+            <a href="https://sourcerer.io/rubenponce" target="_blank" rel="noopener noreferrer">Technologies Used</a>
           
     </div>
     <div className="social-links">
@@ -35,5 +36,6 @@ export default class Navigation extends React.Component {
    
     </div>
     </div>
-  )}
+  )
+}
 }
