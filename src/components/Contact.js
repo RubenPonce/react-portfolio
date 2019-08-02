@@ -6,6 +6,10 @@ max-width: 800px;
 margin: 0 auto 4em auto;
 display: flex;
 flex-direction: column;
+form{
+  width: 95%;
+  margin: 0 auto;
+}
   h2{
   text-align: center;
   margin: 3em 0;

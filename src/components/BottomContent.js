@@ -21,7 +21,7 @@ const ContentContainer = styled.div`
 export default function BottomContent() {
   return (
     <ContentContainer>
-    <h2>Looking for a full stack developer? <Link to="/contact" >Get in touch </Link></h2>
+    <h2>Looking for a full stack developer? <Link to="/contact" >Get in touch. </Link></h2>
     </ContentContainer>
   )
 }
