@@ -7,7 +7,9 @@
   height: 100%;
   max-width: 1920px;
 }
-
+body{
+  background: url(./components/trianglify.svg);
+}
 h1,
 h2,
 h3,
