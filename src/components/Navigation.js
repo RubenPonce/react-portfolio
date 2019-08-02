@@ -22,7 +22,6 @@ export default class Navigation extends Component {
       }
 
   render(){
-      console.log(this.props)
       const {pathname} = this.props.history.location
       return (
     <div className="header">
