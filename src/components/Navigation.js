@@ -6,7 +6,9 @@ export default class Navigation extends Component {
        const header =  document.querySelector('.header');
         if(window.scrollY > 15){  
             header.classList.add('scroll-effect');
-            if( header.classList.contains('remove-scroll')){header.classList.remove('remove-scroll')}
+            if( header.classList.contains('remove-scroll')){
+                header.classList.remove('remove-scroll')
+            }
         } else{
             header.classList.replace('scroll-effect','remove-scroll')
         }
