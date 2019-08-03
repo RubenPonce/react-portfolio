@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  max-width: 1920px;
 }
 body{
   background: url(./components/trianglify.svg);
