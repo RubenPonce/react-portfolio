@@ -3,7 +3,7 @@ const data =  [
          "project_name":"DevFindr",
         "description":"This app connects entreprenuers with the developers that can build their projects.",
         "technologies":["js","css3-alt","sass", "react"],
-        "demo":"devfindr.com",
+        "demo":"https://devfindr.com",
         "sourceCode":"https://github.com/labs14-build-my-app/frontend",
         landingImage: '/images/devfindr.png'
         
