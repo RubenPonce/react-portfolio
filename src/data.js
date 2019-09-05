@@ -1,9 +1,9 @@
 const data =  [
      {    "id":"0",
          "project_name":"DevFindr",
-        "description":"Allows you to connect entrepreneur's ideas with capable developers to craft their ideas into professional applications. Disclaimer: App is being overhauled in its entirety. Older version is on https://devfindr.com",
+        "description":"This app connects entreprenuers with the developers that can build their projects.",
         "technologies":["js","css3-alt","sass", "react"],
-        "demo":"https://codesandbox.io/s/github/labs14-build-my-app/frontend/tree/dashboard-development/",
+        "demo":"devfindr.com",
         "sourceCode":"https://github.com/labs14-build-my-app/frontend",
         landingImage: '/images/devfindr.png'
         
