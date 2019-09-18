@@ -8,6 +8,7 @@
 }
 body{
   background: url(./components/trianglify.svg);
+  background-size: cover;
 }
 h1,
 h2,
