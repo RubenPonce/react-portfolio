@@ -3,7 +3,7 @@ const data =  [
          "project_name":"DevFindr",
         "description":"This app connects entreprenuers with the developers that can build their projects.",
         "technologies":["js","css3-alt","sass", "react"],
-        "demo":"https://devfindr.com",
+        "demo":"https://serene-murdock-c566cc.netlify.com",
         "sourceCode":"https://github.com/labs14-build-my-app/frontend",
         landingImage: '/images/devfindr.png'
         
@@ -12,7 +12,7 @@ const data =  [
       "project_name":"∑tockly",
       "description":"This app simplifies the decision in buying, selling, and holding stocks.",
       "technologies":["js","css3-alt","sass", "react"],
-      "demo":"https://getstockly.com/",
+      "demo":"https://stockly-fe.netlify.app",
       "sourceCode":"https://github.com/lambda-stockly/build-stockly-frontend",
       landingImage: '/images/stockly.png'
      },
