@@ -26,8 +26,7 @@ export default class Navigation extends Component {
       return (
     <div className="header">
     <div  className="nav">
-            {pathname ==="/contact" ? <Link to="/">Home</Link> : pathname==="/" ?  <Link to="/contact">Contact</Link> : <Link to="/">Home</Link>  }
-            <a href="https://sourcerer.io/rubenponce" target="_blank" rel="noopener noreferrer">Technologies Used</a>
+            {/* {pathname ==="/about" ? <Link to="/">Home</Link> : pathname==="/" ?  <Link to="/about">About</Link> : <Link to="/">Home</Link>  } */}
           
     </div>
     <div className="social-links">

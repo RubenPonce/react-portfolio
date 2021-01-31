@@ -2,7 +2,7 @@
   text-align: center;
   padding-top: 10em;
 }
-body{
+body {
   background: url(./components/trianglify.svg);
   background-size: cover;
 }
@@ -41,7 +41,7 @@ html {
 }
 @keyframes ScrollEffect {
   0% {
-    background: transparent; 
+    background: transparent;
   }
   100% {
     background: black;
@@ -89,11 +89,21 @@ html {
 .introduction {
   margin-bottom: 5em;
 }
+.introduction .cta-intro {
+  width: 80%;
+  font-size: 2rem;
+  margin: 1.5rem auto 0 auto;
+  max-width: 1450px;
+}
+@media (max-width: 1000px) {
+  .introduction .cta-intro {
+    font-size: 1.5rem;
+  }
+}
 .introduction h1 {
   color: rgba(250, 250, 250, 0.995);
   font-size: 2.5rem;
   line-height: 1.5;
-  
 }
 .introduction a {
   color: #efefef;
@@ -157,6 +167,8 @@ html {
   width: 85%;
   margin: 2em auto;
   box-shadow: 6px 8px 42px 1px rgba(0, 0, 0, 0.15);
+  max-width: 649px;
+  max-height: 344px;
 }
 .project-tech {
   display: flex;
@@ -181,6 +193,7 @@ html {
   box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.7);
   background: #efefef;
   margin: 1em;
+  max-width: 1390px;
 }
 .project-card:nth-child(odd) {
   flex-direction: row-reverse;
@@ -209,14 +222,13 @@ nav a:hover {
   color: #3aa7ff;
 }
 
-
 @media (max-width: 1061px) {
-  .introduction h1{
-    padding: 0 .5em;
+  .introduction h1 {
+    padding: 0 0.5em;
     font-size: 2rem;
   }
-  .project-intro h2{
-    padding: 0 .5em;
+  .project-intro h2 {
+    padding: 0 0.5em;
     font-size: 1.7rem;
   }
   .project-card:nth-child(odd) {
@@ -272,20 +284,18 @@ nav a:hover {
     font-size: 0.75em;
   }
   .social-links i {
-
     margin: 0 2em;
-    
   }
-  
+
   .contact-form h2 {
     font-size: 1.7rem;
     margin-right: 70%;
   }
   .social-links a {
-        margin: 0 ; 
- padding: 0;
+    margin: 0;
+    padding: 0;
   }
-  
+
   .project-header {
     margin: 1em auto;
     font-family: Raleway, Arial, sans-serif;
