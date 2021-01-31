@@ -6,8 +6,6 @@ import data from "./data";
 import Projects from "./components/Projects";
 import Introduction from "./components/Introduction";
 import Navigation from "./components/Navigation";
-import Contact from "./components/Contact";
-import BottomContent from "./components/BottomContent";
 import About from "./components/About";
 
 const App = () => {
