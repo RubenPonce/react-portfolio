@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import styled from "styled-components"
+import styled from "styled-components";
 const ContactFormDiv = styled.div`
 max-width: 800px;
 margin: 0 auto 4em auto;
@@ -43,7 +43,7 @@ div{
  
 }
 
-`
+`;
 /*
 .contact-form
 .contact-form input,
@@ -78,31 +78,31 @@ class Contact extends Component {
     message: "",
     email: "",
     sent: false,
-    ButtonText: "Send Message"
+    ButtonText: "Send Message",
   };
 
-  FormSubmit = e => {
+  FormSubmit = (e) => {
     e.preventDefault();
 
     this.setState({
-      ButtonText: "...sending"
+      ButtonText: "...sending",
     });
 
     let data = {
       name: this.state.name,
       email: this.state.email,
-      message: this.state.message
+      message: this.state.message,
     };
 
     axios
       .post("https://formcarry.com/s/FZiCGxWL6oO", data, {
-        headers: { Accept: "application/json" }
+        headers: { Accept: "application/json" },
       })
-      .then(res => {
+      .then((res) => {
         console.log(res.data);
         this.setState({ sent: true }, this.resetForm());
       })
-      .catch(err => {
+      .catch((err) => {
         console.log("Message not sent", err);
       });
   };
@@ -111,7 +111,7 @@ class Contact extends Component {
       name: "",
       message: "",
       email: "",
-      ButtonText: "Message Sent"
+      ButtonText: "Message Sent",
     });
   };
 
@@ -119,27 +119,27 @@ class Contact extends Component {
     return (
       <ContactFormDiv>
         <h2>Contact:</h2>
-        <form onSubmit={e => this.FormSubmit(e)}>
-<div>
-              <label className="message" htmlFor="message-Input">
-                Message
-              </label>
+        <form onSubmit={(e) => this.FormSubmit(e)}>
+          <div>
+            <label className="message" htmlFor="message-Input">
+              Message
+            </label>
 
-              <textarea
-                onChange={e => this.setState({ message: e.target.value })}
-                name="message"
-                className="message-Input"
-                type="text"
-                value={this.state.message}
-                required
-              />
-</div>
+            <textarea
+              onChange={(e) => this.setState({ message: e.target.value })}
+              name="message"
+              className="message-Input"
+              type="text"
+              value={this.state.message}
+              required
+            />
+          </div>
           <div>
             <label className="message-name" htmlFor="message-name">
               Name
             </label>
             <input
-              onChange={e => this.setState({ name: e.target.value })}
+              onChange={(e) => this.setState({ name: e.target.value })}
               name="name"
               className="message-name"
               type="text"
@@ -151,7 +151,7 @@ class Contact extends Component {
               Email
             </label>
             <input
-              onChange={e => this.setState({ email: e.target.value })}
+              onChange={(e) => this.setState({ email: e.target.value })}
               name="email"
               id="message-email"
               className="message-email"
@@ -161,15 +161,13 @@ class Contact extends Component {
             />
           </div>
 
-
-            <button
-              type="submit"
-              className="contact-form-btn"
-              color={!this.state.sent ? "secondary" : "success"}
-            >
-              {this.state.ButtonText}
-            </button>
-
+          <button
+            type="submit"
+            className="contact-form-btn"
+            color={!this.state.sent ? "secondary" : "success"}
+          >
+            {this.state.ButtonText}
+          </button>
         </form>
       </ContactFormDiv>
     );

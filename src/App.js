@@ -1,46 +1,39 @@
-import React, { Component } from "react";
-import "./App.css";
-import data from "./data";
+import React from "react";
 import { Route } from "react-router-dom";
+import "./App.css";
+
+import data from "./data";
 import Projects from "./components/Projects";
 import Introduction from "./components/Introduction";
 import Navigation from "./components/Navigation";
-import Contact from "./components/Contact";
-import BottomContent from "./components/BottomContent"
-export class App extends Component {
-  state = {
-    projects: data
-  };
+import About from "./components/About";
 
-
-  render() {
-    return (
-      <div className="App">
-
-        <Route
-          exact
-          path="/"
-          render={props => {
-            return (
-              <div>
-                <Navigation {...props} />
-                <Introduction />
-                <Projects {...props} projects={this.state.projects} />
-                <BottomContent />
-              </div>
-            );
-          }}
-        />
-        <Route exact path="/contact" render={(props)=>{
-          return (<div>
-           <Navigation {...props} />
-          <Contact/>
-          </div>)
-          }
-          }/>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div className="App">
+      <Route
+        exact
+        path="/"
+        render={(props) => (
+          <>
+            <Navigation {...props} />
+            <Introduction />
+            <Projects {...props} projects={data} />
+          </>
+        )}
+      />
+      <Route
+        exact
+        path="/about"
+        render={(props) => (
+          <>
+            <Navigation {...props} />
+            <About />
+          </>
+        )}
+      />
+    </div>
+  );
+};
 
 export default App;
