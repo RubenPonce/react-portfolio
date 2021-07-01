@@ -42,13 +42,13 @@ export default class Navigation extends Component {
           >
             <i className="fab fa-github fa-2x"></i>
           </a>
-          <a
+        /*  <a
             href="https://twitter.com/RubenMPonce/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-twitter fa-2x"></i>
-          </a>
+          </a>*/
         </div>
       </div>
     );
