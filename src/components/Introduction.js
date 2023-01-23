@@ -29,7 +29,7 @@ export default function Introduction() {
         {" "}
         <h1 className="cta-intro">
           {phraseIndex === maxPhraseLength &&
-            "I am looking for opportunities to contribute to censorship resistant platforms and meaningful software. My goal as a software engineer is to build a fair and inclusive digital public square for all."}
+            "Software Engineer with 3+ years experience in developing, testing, and troubleshooting web applications with JavaScript frameworks such as Vuejs and React. I am ready to contribute to your project."}
         </h1>
       </Fade>
     );

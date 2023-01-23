@@ -29,7 +29,7 @@ export default class Navigation extends Component {
         </div>
         <div className="social-links">
           <a
-            href="https://www.linkedin.com/in/ruben-ponce/"
+            href="https://www.linkedin.com/in/ruben-ponce-3957a7262/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -42,8 +42,8 @@ export default class Navigation extends Component {
           >
             <i className="fab fa-github fa-2x"></i>
           </a>
-  <a
-            href="https://twitter.com/RubenMPonce/"
+          <a
+            href="https://twitter.com/krebdev"
             target="_blank"
             rel="noopener noreferrer"
           >
