@@ -1,6 +1,15 @@
 const data = [
   {
     id: "0",
+    project_name: "Catcher TV",
+    description: "A community driven platform for predator catchers and their fans",
+    technologies: ["js", "css3-alt", "html5", "react", "node", "aws", "mongodb"],
+    demo: "https://www.catcher.tv",
+    sourceCode: "https://github.com/RubenPonce/grahql-catcher",
+    landingImage: "/images/catchertv.png",
+  },
+  {
+    id: "1",
     project_name: "DevFindr",
     description:
       "This app connects entreprenuers with the developers that can build their projects.",
@@ -10,7 +19,7 @@ const data = [
     landingImage: "/images/devfindr.png",
   },
   {
-    id: "1",
+    id: "2",
     project_name: "∑tockly",
     description:
       "This app simplifies the decision in buying, selling, and holding stocks.",
@@ -20,7 +29,7 @@ const data = [
     landingImage: "/images/stockly.png",
   },
   {
-    id: "2",
+    id: "3",
     project_name: "Satoshi's Law",
     description: "Allows you to pay employees in crypto.",
     technologies: ["js", "css3-alt", "html5", "react"],

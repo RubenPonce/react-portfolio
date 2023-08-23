@@ -1,69 +1,37 @@
 {
-  "name": "react-portfolio",
-  "version": "0.1.0",
+  "name": "rubenponce",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.21.1",
-    "body-parse": "^0.1.0",
-    "bootstrap": "^4.3.1",
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "nodemailer": "^6.1.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
-    "reactstrap": "^8.0.0",
-    "styled-components": "^4.3.2"
+    "axios": "1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build"
-    }
-  ],
-  "routes": [
-    {
-      "src": "^/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "^/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "^/asset-manifest.json",
-      "dest": "/asset-manifest.json"
-    },
-    {
-      "src": "^/manifest.json",
-      "dest": "/manifest.json"
-    },
-    {
-      "src": "^/service-worker.js",
-      "headers": {
-        "cache-control": "s-maxage=0"
-      },
-      "dest": "/service-worker.js"
-    },
-    {
-      "src": "^/precache-manifest.(.*)",
-      "dest": "/precache-manifest.$1"
-    },
-    {
-      "src": "^/(.*)",
-      "dest": "/index.html"
-    }
-  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "description": "My portfolio of projects",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/RubenPonce/react-portfolio.git"
   },
+  "keywords": [
+    "portfolio",
+    "ruben",
+    "ponce",
+    "react"
+  ],
+  "author": "Ruben Ponce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubenPonce/react-portfolio/issues"
+  },
+  "homepage": "/",
   "browserslist": {
     "production": [
       ">0.2%",

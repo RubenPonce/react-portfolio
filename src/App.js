@@ -1,36 +1,17 @@
 import React from "react";
-import { Route } from "react-router-dom";
 import "./App.css";
 
-import data from "./data";
-import Projects from "./components/Projects";
+import {Projects} from "./components/Projects";
 import Introduction from "./components/Introduction";
 import Navigation from "./components/Navigation";
-import About from "./components/About";
 
 const App = () => {
+    console.log("App.js");
   return (
     <div className="App">
-      <Route
-        exact
-        path="/"
-        render={(props) => (
-          <>
-            <Navigation {...props} />
+            <Navigation />
             <Introduction />
-            <Projects {...props} projects={data} />
-          </>
-        )}
-      />
-      <Route
-        exact
-        path="/about"
-        render={(props) => (
-          <>
-            <Navigation {...props} />
-            <About />
-          </>
-        )}
+            <Projects   />
       />
     </div>
   );

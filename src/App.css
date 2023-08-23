@@ -25,7 +25,7 @@ html {
   display: flex;
   justify-content: space-between;
   background: none;
-  width: 100%;
+  width: 98%;
   position: fixed;
   height: 76px;
   align-items: center;
@@ -262,7 +262,31 @@ nav a:hover {
   /*  width: 65%;*/
   /*}*/
 }
-
+.project-cta {
+  display: inline-block;
+  color: #007bff;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.project-cta:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
 @media (max-width: 770px) {
   .project-card:nth-child(odd) {
     width: 95%;
@@ -302,6 +326,7 @@ nav a:hover {
     width: 90%;
     align-self: center;
   }
+
 
   /*.text-input textarea {*/
   /*                  width: 90%;*/

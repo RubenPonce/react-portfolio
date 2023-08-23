@@ -1,9 +1,7 @@
-import React, { Component } from "react";
-import ProjectCard from "./ProjectCard";
-
-export class Projects extends Component {
-  render() {
-    const projects = this.props.projects;
+import React from "react";
+import {ProjectCard} from "./ProjectCard";
+import projects from "../data.js"
+export const Projects = () => {
     return (
       <div>
         <div className="project-intro">
@@ -13,7 +11,6 @@ export class Projects extends Component {
           {projects.map(projectCard => {
             return (
               <ProjectCard
-                {...this.props}
                 project={projectCard}
                 key={projectCard.id}
                 projectRoute={`/project/${projectCard.id}`}
@@ -23,7 +20,5 @@ export class Projects extends Component {
         </div>
       </div>
     );
-  }
 }
 
-export default Projects;
