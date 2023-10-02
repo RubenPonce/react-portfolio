@@ -1,5 +1,6 @@
 import React from "react";
 import {trackButtonClick} from "./analytics";
+
 export const ProjectCard = ({project}) => {
 
     return (

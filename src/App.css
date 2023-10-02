@@ -87,6 +87,17 @@ html {
 }
 .introduction {
   margin-bottom: 5em;
+  & h1 {
+    backface-visibility: hidden;
+    height: 96px;
+    margin-top: 1.5rem;
+  }
+
+  & .highlight {
+    font-weight: 800;
+    color: #660066;
+    backface-visibility: hidden;
+  }
 }
 .introduction .cta-intro {
   width: 80%;
