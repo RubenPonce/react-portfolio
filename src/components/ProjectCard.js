@@ -1,5 +1,5 @@
 import React from "react";
-import {trackButtonClick} from "./analytics";
+import {trackButtonClick, trackProjectSourceCodeClick} from "./analytics";
 
 export const ProjectCard = ({project}) => {
 
@@ -20,7 +20,7 @@ export const ProjectCard = ({project}) => {
             <div className="project-header">
                 <h3>{project.project_name}</h3>
                 <p> {project.description}</p>
-                <a href={project.demo} target="_blank" rel="noopener noreferrer" onClick={trackButtonClick}>
+                <a href={project.demo} target="_blank" rel="noopener noreferrer" onClick={()=>trackButtonClick(project.project_name)}>
                     <button
                         className="project-cta"
                     >
@@ -31,6 +31,7 @@ export const ProjectCard = ({project}) => {
                     href={project.sourceCode}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={()=>trackProjectSourceCodeClick(project.sourceCode)}
                 >
                     <button
                         color="primary"

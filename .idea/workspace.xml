@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c1b5b1-d1e5-49d2-9305-c01c0a1ad291" name="Default Changelist" comment="">
+    <list default="true" id="80c1b5b1-d1e5-49d2-9305-c01c0a1ad291" name="Default Changelist" comment="Linting,Organization, usePhraseLogic Hook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BottomContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Introduction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/analytics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/analytics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +89,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -219,6 +213,7 @@
       <updated>1562537663492</updated>
       <workItem from="1562537665177" duration="2903000" />
       <workItem from="1692820599227" duration="5663000" />
+      <workItem from="1696256579135" duration="2804000" />
     </task>
     <task id="LOCAL-00001" summary="Create analytics.js file and implement trackButtonClick function to track button clicks on project demo buttons.">
       <option name="closed" value="true" />
@@ -228,7 +223,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696218924607</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Linting,Organization, usePhraseLogic Hook">
+      <option name="closed" value="true" />
+      <created>1696219891597</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696219891597</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add react-ga as a dependency">
+      <option name="closed" value="true" />
+      <created>1696256904314</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696256904314</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -270,7 +281,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create analytics.js file and implement trackButtonClick function to track button clicks on project demo buttons." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create analytics.js file and implement trackButtonClick function to track button clicks on project demo buttons." />
+    <MESSAGE value="Linting,Organization, usePhraseLogic Hook" />
+    <MESSAGE value="add react-ga as a dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="add react-ga as a dependency" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/data.js">
