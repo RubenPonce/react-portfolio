@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c1b5b1-d1e5-49d2-9305-c01c0a1ad291" name="Default Changelist" comment="Linting,Organization, usePhraseLogic Hook">
+    <list default="true" id="80c1b5b1-d1e5-49d2-9305-c01c0a1ad291" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/analytics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/analytics.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +211,7 @@
       <updated>1562537663492</updated>
       <workItem from="1562537665177" duration="2903000" />
       <workItem from="1692820599227" duration="5663000" />
-      <workItem from="1696256579135" duration="2804000" />
+      <workItem from="1696256579135" duration="4290000" />
     </task>
     <task id="LOCAL-00001" summary="Create analytics.js file and implement trackButtonClick function to track button clicks on project demo buttons.">
       <option name="closed" value="true" />
@@ -239,7 +237,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696256904314</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add trackProjectSourceCodeClick function to track clicks on project source code buttons.">
+      <option name="closed" value="true" />
+      <created>1696264362794</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696264362794</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add Google tag (gtag.js) script for tracking analytics in index.html.">
+      <option name="closed" value="true" />
+      <created>1696266840557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696266840557</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -281,9 +295,11 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create analytics.js file and implement trackButtonClick function to track button clicks on project demo buttons." />
-    <MESSAGE value="Linting,Organization, usePhraseLogic Hook" />
     <MESSAGE value="add react-ga as a dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="add react-ga as a dependency" />
+    <MESSAGE value="Linting,Organization, usePhraseLogic Hook" />
+    <MESSAGE value="Add trackProjectSourceCodeClick function to track clicks on project source code buttons." />
+    <MESSAGE value="Add Google tag (gtag.js) script for tracking analytics in index.html." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Google tag (gtag.js) script for tracking analytics in index.html." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/data.js">
