@@ -47,8 +47,9 @@ export default class Navigation extends Component {
                         href="https://twitter.com/krebdev"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="uneven-twitter-icon"
                     >
-                        <i className="fab fa-twitter fa-2x"></i>
+                        <i className="fa-brands fa-x-twitter fa-2x"></i>
                     </a>
                 </div>
             </div>

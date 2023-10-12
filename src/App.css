@@ -455,4 +455,8 @@ nav a:hover {
 }
 
 
-
+.uneven-twitter-icon{
+    @media (min-width: 767px) {
+        margin-left: 0.5em !important;
+    }
+}
