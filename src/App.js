@@ -9,7 +9,7 @@ import {Services} from "./components/Services";
 function Cta() {
     return (
         <div className="cta-container">
-            <h2>Let's <a href="https://calendly.com/rubenponce/have-a-conversation" >schedule a discovery call</a> and start building project today!</h2>
+            <h2>Let's <a href="https://calendly.com/rubenponce/have-a-conversation" >schedule a discovery call</a> and start building a project today!</h2>
         </div>
     )
 }
