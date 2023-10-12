@@ -377,6 +377,9 @@ nav a:hover {
   text-align: center;
   transition: transform 0.3s;
   position: relative;
+    @media (max-width: 700px) {
+        margin-top: 5rem;
+    }
 }
 
 .service-card:hover {
@@ -426,8 +429,8 @@ nav a:hover {
     margin-top: 4rem;
   }
   .services-container {
-    margin-top: 15rem;
     gap:1px;
+
   }
 }
 .emphasis{
