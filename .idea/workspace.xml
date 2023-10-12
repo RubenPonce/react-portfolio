@@ -7,7 +7,6 @@
     <list default="true" id="80c1b5b1-d1e5-49d2-9305-c01c0a1ad291" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +220,7 @@
       <workItem from="1696256579135" duration="6243000" />
       <workItem from="1696648138551" duration="4043000" />
       <workItem from="1696652193065" duration="2393000" />
-      <workItem from="1696831682109" duration="20252000" />
+      <workItem from="1696831682109" duration="20727000" />
     </task>
     <task id="LOCAL-00001" summary="Create analytics.js file and implement trackButtonClick function to track button clicks on project demo buttons.">
       <option name="closed" value="true" />
@@ -351,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697096935618</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Update project demo URL in src/data.js and add .idea to .gitignore.">
+      <option name="closed" value="true" />
+      <created>1697105050891</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1697105050891</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
