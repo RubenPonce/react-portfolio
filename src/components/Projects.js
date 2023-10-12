@@ -4,9 +4,9 @@ import projects from "../data.js"
 
 export const Projects = () => {
     return (
-        <div>
+        <>
             <div className="project-intro">
-                <h2>Projects: </h2>
+                <h2>Portfolio: </h2>
             </div>
             <div className="projects-container">
                 {projects.map(projectCard => {
@@ -19,7 +19,7 @@ export const Projects = () => {
                     );
                 })}
             </div>
-        </div>
+        </>
     );
 }
 

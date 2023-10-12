@@ -24,7 +24,7 @@ export const ProjectCard = ({project}) => {
                     <button
                         className="project-cta"
                     >
-                        live demo
+                        Live Demo
                     </button>
                 </a>
                 <a
@@ -38,7 +38,7 @@ export const ProjectCard = ({project}) => {
                         className="project-cta"
                         style={{margin: "0 .5em"}}
                     >
-                        source code
+                        Source Code
                     </button>
                 </a>
             </div>

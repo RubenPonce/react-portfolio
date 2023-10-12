@@ -23,13 +23,14 @@ const usePhraseLogic = (phrases) => {
     return { phraseIndex, displayGoal };
 };
 export default function Introduction() {
-    const iBuild = ['web apps', 'mobile apps', 'software'];
+    const iBuild = ['websites', 'mobile apps', 'your solutions'];
     const { phraseIndex, displayGoal } = usePhraseLogic(iBuild);
 
     const endingPhrase = useMemo(() => (
         <h1 className="cta-intro">
-            Frontend Developer with 4+ years experience in developing, testing, and troubleshooting web applications
-            with JavaScript frameworks such as Vuejs and React. I am ready to contribute to your project.
+            Frontend Developer with 4+ years experience in developing, testing, and troubleshooting web applications and websites, proficient in modern technologies to build your next project.
+            {' '}
+            <a className="cta-link" href="https://calendly.com/rubenponce/have-a-conversation" className="cta-intro-link">Let's schedule a discovery call!</a>
         </h1>
     ), []);
 
@@ -46,15 +47,8 @@ export default function Introduction() {
     return (
         <div className="introduction">
             <h1>
-                I'm Ruben Ponce, a frontend{' '}
-                <a
-                    href="https://github.com/RubenPonce"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    developer
-                </a>
-                .
+                I'm Ruben Ponce, <span className="emphasis">your</span>{' '}
+                    web developer.
             </h1>
             {!displayGoal ? renderIBuild() : endingPhrase}
         </div>

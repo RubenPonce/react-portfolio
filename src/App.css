@@ -120,6 +120,12 @@ html {
 
   text-decoration: underline;
 }
+.project-intro{
+    margin-top: 13rem;
+}
+.projects-intro h2{
+    margin-top:10rem;
+}
 .project-intro h2,
 .project-intro p {
   font-family: "Raleway", cursive;
@@ -349,3 +355,91 @@ nav a:hover {
   /*  margin: 1em 0;*/
   /*}*/
 }
+.services-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: fadeAway 0.5s forwards;
+}
+
+.service-card {
+  background: #ffffff;
+  margin-top: 4rem;
+  padding: 3rem 4rem;
+  border-radius: 10px;
+  width: calc(33% - 20px); /* Subtracting the gap */
+    box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.7);
+  text-align: center;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+@keyframes colorTransform {
+  0% { color: initial;}
+  50% { color: #3aa7ff; }
+  100% { color: initial; }
+}
+
+@keyframes fadeAway {
+  0%, 24% { opacity: 0.1; }
+  25%{ opacity: 0.2; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+.service-icon {
+  font-size: 3rem;
+  height: auto;
+  margin-bottom: 15px;
+  animation: colorTransform 5s infinite;
+}
+
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+    margin: 2rem 0 2.5rem 0;
+}
+
+.service-text {
+  font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+@media (max-width: 767px) {
+  .service-card {
+    margin-top: 0.1rem;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .service-card:nth-child(1) {
+    margin-top: 4rem;
+  }
+  .services-container {
+    margin-top: 15rem;
+    gap:1px;
+  }
+}
+.emphasis{
+    padding-bottom: 1px;
+    border-bottom: 4px solid #f0f0f0;
+}
+.cta-container {
+    background: #f0f0f0;
+    padding: 3rem 0;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    & a {
+      color: #000;
+      text-decoration: underline;
+    }
+}
+
+
+
