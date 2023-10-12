@@ -22,7 +22,7 @@
     -->
 
     <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="index.css" >
+    <link rel="stylesheet" href="index.css">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <script src="https://kit.fontawesome.com/4810a47f7e.js" crossorigin="anonymous"></script>
 
@@ -54,68 +54,71 @@
 </script>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
-<div id="loader">
-    <i class="fas fa-spinner fa-spin fa-5x"></i>
-</div>
-<div class="header">
-    <div class="nav">
+<div style="overflow-x:hidden">
+
+    <div id="loader">
+        <i class="fas fa-spinner fa-spin fa-5x"></i>
     </div>
-    <nav class="social-links">
-        <a
-                href="https://www.linkedin.com/in/ruben-ponce-3957a7262/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-        >
-            <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a
-                href="https://www.github.com/rubenponce/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-        >
-            <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a
-                href="https://twitter.com/krebdev"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="uneven-twitter-icon"
-                aria-label="Twitter"
-        >
-            <i class="fa-brands fa-x-twitter fa-2x"></i>
-        </a>
-    </nav>
-</div>
-<div id="root"></div>
+    <div class="header">
+        <div class="nav">
+        </div>
+        <nav class="social-links">
+            <a
+                    href="https://www.linkedin.com/in/ruben-ponce-3957a7262/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+            >
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a
+                    href="https://www.github.com/rubenponce/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+            >
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a
+                    href="https://twitter.com/krebdev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="uneven-twitter-icon"
+                    aria-label="Twitter"
+            >
+                <i class="fa-brands fa-x-twitter fa-2x"></i>
+            </a>
+        </nav>
+    </div>
+    <div id="root"></div>
 
-<script>
-    document.onreadystatechange = function() {
-        if (document.readyState !== "complete") {
-            document.querySelector("body").style.visibility = "hidden";
-            document.querySelector("#loader").style.visibility = "visible";
-        } else {
-            document.querySelector("#loader").style.display = "none";
-            document.querySelector("body").style.visibility = "visible";
-        }
-    };
-    handleScroll = () => {
-        const header = document.querySelector(".header");
-        if (window.scrollY > 15) {
-            header.classList.add("scroll-effect");
-            if (header.classList.contains("remove-scroll")) {
-                header.classList.remove("remove-scroll");
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loader").style.visibility = "visible";
+            } else {
+                document.querySelector("#loader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
             }
-        } else {
-            header.classList.replace("scroll-effect", "remove-scroll");
-        }
-    };
+        };
+        handleScroll = () => {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 15) {
+                header.classList.add("scroll-effect");
+                if (header.classList.contains("remove-scroll")) {
+                    header.classList.remove("remove-scroll");
+                }
+            } else {
+                header.classList.replace("scroll-effect", "remove-scroll");
+            }
+        };
 
-    document.addEventListener("DOMContentLoaded", function () {
-        window.addEventListener("scroll", handleScroll);
-    })
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", handleScroll);
+        })
 
-</script>
+    </script>
+</div>
 </body>
 </html>

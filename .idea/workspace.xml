@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80c1b5b1-d1e5-49d2-9305-c01c0a1ad291" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-portfolio.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +221,7 @@
       <workItem from="1696256579135" duration="6243000" />
       <workItem from="1696648138551" duration="4043000" />
       <workItem from="1696652193065" duration="2393000" />
-      <workItem from="1696831682109" duration="18109000" />
+      <workItem from="1696831682109" duration="20252000" />
     </task>
     <task id="LOCAL-00001" summary="Create analytics.js file and implement trackButtonClick function to track button clicks on project demo buttons.">
       <option name="closed" value="true" />
@@ -348,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697090596480</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update project demo URL in src/data.js and add .idea to .gitignore.">
+      <option name="closed" value="true" />
+      <created>1697096935618</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1697096935618</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -405,7 +408,8 @@
     <MESSAGE value="[Performance] remove javascript that should be html&#10;add webp images instead of png" />
     <MESSAGE value="Add meta description and aria-label attributes for social media links in index.html." />
     <MESSAGE value="Remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove" />
+    <MESSAGE value="Update project demo URL in src/data.js and add .idea to .gitignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project demo URL in src/data.js and add .idea to .gitignore." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

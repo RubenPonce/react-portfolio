@@ -29,6 +29,9 @@ body {
     background: url(./images/trianglify.svg);
     background-size: cover;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 h1,
 h2,
 h3,
@@ -48,12 +51,16 @@ html {
     display: flex;
     justify-content: space-between;
     background: none;
-    width: 98%;
+    width: 100%;
     position: fixed;
     align-items: center;
     z-index: 2;
     top: 0;
+
     padding: 2em 2em;
+    @media (max-width: 370px) {
+        justify-content: space-evenly;
+    }
 }
 .scroll-effect {
     animation-name: ScrollEffect;
@@ -131,6 +138,17 @@ html {
 @media (max-width: 1000px) {
     .introduction .cta-intro {
         font-size: 1.5rem;
+    }
+}
+@media (max-width: 767px) {
+    .introduction .cta-intro {
+        width: 90%;
+    }
+}
+@media (max-width: 370px) {
+    .introduction .cta-intro {
+        width: 100%;
+        font-size:1.4rem;
     }
 }
 .introduction h1 {
