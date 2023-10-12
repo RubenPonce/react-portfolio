@@ -4,7 +4,7 @@ const data = [
     project_name: "Catcher TV",
     description: "A community driven platform for predator catchers and their fans",
     technologies: ["js", "css3-alt", "html5", "react", "node", "aws", "mongodb"],
-    demo: "https://www.catcher.tv",
+    demo: "https://catcher.tv",
     sourceCode: "https://github.com/RubenPonce/graphql-catcher",
     landingImage: "/images/catchertv.webp",
   },
