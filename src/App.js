@@ -14,6 +14,16 @@ function Cta() {
     )
 }
 
+function Footer() {
+    return <p style={{
+        textAlign: "center",
+        marginTop: "1em",
+        marginBottom: "1em",
+        color: "#fff",
+        fontSize: "1.2rem",
+    }}>Design by Ruben Ponce | A TITRATE LLC Enterprise</p>
+}
+
 const App = () => {
     return (
         <div className="App">
@@ -21,6 +31,7 @@ const App = () => {
             <Projects/>
             <Services/>
             <Cta/>
+            <Footer />
         </div>
     );
 };
