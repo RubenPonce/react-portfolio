@@ -21,7 +21,9 @@ function Footer() {
         marginBottom: "1em",
         color: "#fff",
         fontSize: "1.2rem",
-    }}>Design by Ruben Ponce | A TITRATE LLC Enterprise</p>
+    }}>Design by Ruben Ponce | A <a style={{
+       color:"#fff"
+    }} href="https://titratellc.com">TITRATE LLC</a> Enterprise</p>
 }
 
 const App = () => {
