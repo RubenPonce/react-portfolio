@@ -28,7 +28,7 @@ export default function Introduction() {
 
     const endingPhrase = useMemo(() => (
         <h1 className="cta-intro">
-            Frontend Developer with 4+ years experience in developing, testing, and troubleshooting web applications and
+            Ruben Ponce is a Frontend Developer with 4+ years experience in developing, testing, and troubleshooting web applications and
             websites, proficient in modern technologies to build your next project.
             {' '}
             <a className="cta-link" href="https://calendly.com/rubenponce/have-a-conversation"
